@@ -15,8 +15,11 @@ $entity->internalIdentifier();
 // Get name or id
 $entity->identifier();
 
-// Get entity type
+// Get entity type name
 $entity->entityType();
+
+// Get bundle name
+$entity->bundle();
 
 // -----------------------------------------------------------------------------
 // Wrap core StdClass object.

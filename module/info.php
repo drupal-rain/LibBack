@@ -1,6 +1,8 @@
 <?php
 
+// -----------------------------------------------------------------------------
 // Simplest
+
 /*
 name = Module name
 description = Module detail description.
@@ -8,7 +10,9 @@ core = 7.x
 version = 7.x-1.x
 */
 
+// -----------------------------------------------------------------------------
 // Normal
+
 /*
 name = Module name
 description = Module detail description.
@@ -16,6 +20,8 @@ core = 7.x
 version = 7.x-1.x
 package = Package name
 */
+
+// -----------------------------------------------------------------------------
 
 /*
 name = Node

@@ -120,8 +120,7 @@ hook_entity_info_alter(&$entity_info);
 // -----------------------------------------------------------------------------
 // Utility
 
+//
 $entity_info = entity_get_info('test_entity');
 dsm($entity_info);
-
-
 

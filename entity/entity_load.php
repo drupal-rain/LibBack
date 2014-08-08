@@ -1,8 +1,11 @@
 <?php
 
 // -----------------------------------------------------------------------------
-// Load multiple by ID.
+// Load multiple by IDs.
+// Id as Key, stdClass or Entity object as value.
 
+$entities = entity_load('dir_link', array(1, 2));
+dsm($entities);
 
 
 // -----------------------------------------------------------------------------
