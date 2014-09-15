@@ -1,5 +1,7 @@
 <?php
 
+// @api http://drupal7.api/api/drupal/developer%21topics%21forms_api_reference.html/7.x
+
 // -----------------------------------------------------------------------------
 // Hooks
 

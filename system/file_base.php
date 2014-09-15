@@ -11,6 +11,7 @@
 //   - install.php
 //   - update.php
 //   - xmlrpc.php
+
 // It's possible to use defined(DRUPAL_ROOT) to check if within Drupal realm.
 DRUPAL_ROOT;
 

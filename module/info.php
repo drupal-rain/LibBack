@@ -35,6 +35,12 @@ required = TRUE
 configure = admin/structure/types
 stylesheets[all][] = node.css
 
+dependencies[] = ctools
+
+; Requires menu_build_tree() conditions; available after 7.10.
+; @see http://drupal.org/node/1025582
+dependencies[] = system (>7.10)
+
 ; Information added by Drupal.org packaging script on 2014-01-15
 version = "7.26"
 project = "drupal"

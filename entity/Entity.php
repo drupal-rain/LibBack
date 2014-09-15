@@ -1,6 +1,6 @@
 <?php
 
-// @see http://drupal7.api:8082/api/entity/includes%21entity.inc/class/Entity/7.x-1.x
+// @see http://drupal7.api/api/entity/includes%21entity.inc/class/Entity/7.x-1.x
 
 // Important notes.
 /*

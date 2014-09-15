@@ -1,15 +1,20 @@
 <?php
 
-// -----------------------------------------------------------------------------
+
+// =============================================================================
 // Entity info
 // @see hook_entity_info().
 // @see hook_entity_info_alter().
 // @see entity_crud_hook_entity_info().
 // @see entity_metadata_hook_entity_info().
 
+
+// =============================================================================
 // System + Entity API
 
+// -----------------------------------------------------------------------------
 // System API
+
 $entity_info = array(
 	'label' => t(''),
   'controller class' => 'DrupalDefaultEntityController',
@@ -55,7 +60,10 @@ $entity_info = array(
   ),
 );
 
-// Entity API CRUD @see entity_crud_hook_entity_info().
+// -----------------------------------------------------------------------------
+// Entity API CRUD
+// @see entity_crud_hook_entity_info().
+
 $entity_info = array(
   'entity class' => 'Entity', // Extends it.
   // 'controller class' => 'EntityAPIController', 'EntityAPIControllerExportable'.
@@ -93,7 +101,10 @@ $entity_info = array(
   'form callback' => '', // @see entity_form().
 );
 
-// Entity API Metadata @see entity_metadata_hook_entity_info().
+// -----------------------------------------------------------------------------
+// Entity API Metadata
+// @see entity_metadata_hook_entity_info().
+
 $entity_info = array(
 	'plural label' => t(''),
   'description' => t(''),
@@ -108,6 +119,8 @@ $entity_info = array(
   'configuration' => FALSE, // Export defaults TRUE.
 );
 
+
+// =============================================================================
 // Callbacks
 
 // -----------------------------------------------------------------------------
@@ -120,7 +133,9 @@ hook_entity_info_alter(&$entity_info);
 // -----------------------------------------------------------------------------
 // Utility
 
-//
-$entity_info = entity_get_info('test_entity');
-dsm($entity_info);
+$entity_info_all = entity_get_info();
+dsm($entity_info_all);
 
+//
+$entity_info_node = entity_get_info('node');
+dsm($entity_info_node);

@@ -17,6 +17,7 @@ dsm($entity_wrapper);
 
 // Property info
 dsm($entity_wrapper->info());
+dsm($entity_wrapper->getPropertyInfo());
 
 // Entity type, if it's entity wrapper, it would be
 $entity_wrapper->type();
@@ -28,3 +29,7 @@ dsm($product);
 $product_wrapper = entity_metadata_wrapper('commerce_product', $product);
 $product_wrapper->save();
 dsm($product);
+
+// Field File/Image
+$entity_wrapper->field_image->type() == 'field_item_image';
+$file = $entity_wrapper->field_image->file;
