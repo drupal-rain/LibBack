@@ -136,6 +136,11 @@ hook_entity_info_alter(&$entity_info);
 $entity_info_all = entity_get_info();
 dsm($entity_info_all);
 
+dsm(entity_get_info());
+
 //
 $entity_info_node = entity_get_info('node');
 dsm($entity_info_node);
+
+//
+dsm(entity_crud_get_info());

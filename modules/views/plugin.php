@@ -6,8 +6,8 @@
 // @see hook_views_plugins().
 // @see hook_views_plugins_alter(&$plugins).
 // @see views_discover_plugins().
-// @link http://drupal7.api:8082/api/views/views.api.php/group/views_plugins/7.x-3.x
-// @link http://drupal7.api:8082/api/views/views.api.php/function/hook_views_plugins/7.x-3.x
+// @link http://drupal7.api/api/views/views.api.php/group/views_plugins/7.x-3.x
+// @link http://drupal7.api/api/views/views.api.php/function/hook_views_plugins/7.x-3.x
 // MODULENAME.views.inc
 
 // For all kinds of plugins.
@@ -28,6 +28,10 @@ function hook_views_plugins() {
   );
 
   return $plugins;
+}
+
+function hook_views_plugins_alter(&$plugins) {
+
 }
 
 // All plugins
