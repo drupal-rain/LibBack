@@ -11,3 +11,4 @@ dsm($instance, 'instance');
 $node = node_load(1);
 $instance_display = field_get_display($instance, 'default', $node);
 dsm($instance_display, 'instance_display');
+

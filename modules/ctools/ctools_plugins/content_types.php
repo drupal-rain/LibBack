@@ -51,7 +51,7 @@ $plugin = array(
   'js' => array('misc/autocomplete.js', 'misc/textarea.js', 'misc/collapse.js'),
   // Context
   'required context' => new ctools_context_required(t('')),
-  'all contexts' => TRUE,
+  'all contexts' => FALSE, // Set to TRUE to bring all context within $pane_context.
   'render callback' => $function_base . 'render',
   'admin title' => $function_base . 'admin_title', // Default is 'title'
   'admin info' => $function_base . 'admin_info',

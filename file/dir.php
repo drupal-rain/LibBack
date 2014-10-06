@@ -12,3 +12,7 @@ foreach ($files as $file) {
   file_move($file_obj, 'public://' . $file->filename);
 }
 
+// =============================================================================
+// file_scan_directory().
+
+// @example ctools_passthrough().

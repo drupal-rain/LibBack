@@ -8,3 +8,11 @@ $form['abc'] = array(
   '#build' => '',
   '#children' => '',
 );
+
+// HTML tag element
+$form['abc'] = array(
+  '#attributes' => array(
+    'id' => '',
+    'class' => '',
+  ),
+);

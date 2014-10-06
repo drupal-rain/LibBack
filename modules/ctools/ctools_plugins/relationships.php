@@ -12,7 +12,7 @@ $plugin = array(
   'description' => t(''),
   'keyword' => '',
   'required context' => new ctools_context_required(t(''), ''),
-  'context' => 'Module_Plugin_context',
+  'context' => 'MODULE_PLUGIN_context',
   'edit form' => '',
   'edit form validate' => '',
   'edit form submit' => '',
@@ -22,7 +22,7 @@ $plugin = array(
 /**
  * Return a new context based on an existing context.
  */
-function Module_Plugin_context($context, $conf) {
+function MODULE_PLUGIN_context($context, $conf) {
   
 }
 
@@ -34,13 +34,13 @@ $plugin = array(
   'description' => t(''),
   'keyword' => '',
   'required context' => new ctools_context_required(t(''), ''),
-  'context' => 'Module_Plugin_context',
+  'context' => 'MODULE_PLUGIN_context',
 );
 
 /**
  * Return a new context based on an existing context.
  */
-function Module_Plugin_context($context, $conf) {
+function MODULE_PLUGIN_context($context, $conf) {
   dsm($context, 'context');
   dsm($conf, 'conf');
   // If unset it wants a generic, unfilled context, which is just NULL.
@@ -60,7 +60,7 @@ function Module_Plugin_context($source_context, $relationship, $placeholders) {
   dsm($placeholders, 'placeholders');
   // If unset it wants a generic, unfilled context, which is just NULL.
   if (empty($source_context->data)) {
-    return ctools_context_create_empty('entity:test_entity', NULL);
+    return ctools_context_create_empty('entity:test_entity');
   }
 
   return FALSE;
@@ -89,7 +89,7 @@ $plugin = array(
 function miiniu_biz_pd_from_product_context($context, $conf) {
   // If unset it wants a generic, unfilled context, which is just NULL.
   if (empty($context->data)) {
-    return ctools_context_create_empty('entity:product_display', NULL);
+    return ctools_context_create_empty('entity:product_display');
   }
 
   if (isset($context->data->product_id)) {

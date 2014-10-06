@@ -14,7 +14,7 @@
 $_GET['q'];
 
 request_path(); // In bootstrap stage, used to prepare $_GET['q'], or drupal_path_initialize().
-current_path(); // Wrapper for $_GET['q']
+current_path(); // Wrapper for $_GET['q'], it returns the system menu path, not alias.
 
 // ----------------------------------------------------------------------------
 // Path Test
@@ -38,8 +38,9 @@ drupal_match_path();
 // ----------------------------------------------------------------------------
 // Path Alias
 
-drupal_get_normal_path(); // Go through this function to match a existing menu routing item.
-drupal_get_path_alias($path = NULL, $path_language = NULL);
+// Go through this function to match a existing menu routing item.
+drupal_get_normal_path($path = NULL, $path_language = NULL); // Get the source path by input alias
+drupal_get_path_alias($path = NULL, $path_language = NULL); // Get the alias path by input source
 
 // Parse income url to be drupal usable path.
 hook_url_inbound_alter(&$path, $original_path, $path_language);

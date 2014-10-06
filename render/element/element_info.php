@@ -20,7 +20,7 @@ dsm(module_invoke_all('element_info'));
 
 // Get specific module defined elemenets
 dsm(module_invoke('ModuleName', 'element_info'));
-// system.module
+// Great Example: system.module
 dsm(module_invoke('system', 'element_info'));
 
 $element_info = array(
